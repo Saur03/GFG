@@ -15,8 +15,8 @@ def assign(a, n):
     #sort the array
     a.sort()
     ans = [0] * n
-    p = 0
-    q = n - 1
+    p = 0 # where p stands for odd index
+    q = n - 1 # where q stands for even index
     for i in range(n):
         # Assign even indexes with maximum elements
         if (i + 1) % 2 == 0:
