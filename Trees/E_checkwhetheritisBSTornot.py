@@ -37,4 +37,28 @@ class Solution:
     
     #Function to check whether a Binary Tree is BST or not.
     def isBST(self, root):
-        
+        if not root:
+            return True
+
+        stack = []
+        prev_node = None
+
+        while root or stack:
+            # Traverse left until the leftmost node
+            while root:
+                stack.append(root)
+                root = root.left
+
+            # Process the current node
+            root = stack.pop()
+
+            # Check if the current node's value is greater than the previous node's value
+            if prev_node and root.data <= prev_node.data:
+                return False
+
+            prev_node = root
+
+            # Move to the right subtree
+            root = root.right
+
+        return True
