@@ -15,9 +15,9 @@ Output: False
 Explanation: For N = 4 ,x = 0 means then lastNode->next = NULL, then the Linked list does not contains any loop.
 '''
 class Node:
-		    def __init__(self, data):   # data -> value stored in node
-		        self.data = data
-		        self.next = None
+     def __init__(self, data):
+        self.data = data
+        self.next = None
 	
 
 class Solution:
