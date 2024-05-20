@@ -18,4 +18,4 @@ def fact(n):
 if __name__ == '__main__':
 	print(fact(5))
 
-# This code is contributed by Smitha.
+
