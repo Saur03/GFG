@@ -1,4 +1,3 @@
-
 # program to check whether a given array represents a max-heap or not 
 
 # Returns true if arr[i..n-1] 
